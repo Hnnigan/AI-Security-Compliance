@@ -28,10 +28,14 @@ The agent is implemented in the Python script `ai_security_maturity_agent.py`. T
 
 Understanding Compliance Status
 The agent determines compliance using simple, transparent rules:
-•	• **Compliant** – the control is reported as “Implemented” (or “Complete”) and valid evidence is provided.
-•	• **Partial** – the control is reported as “Partial” or has evidence but no clear implementation status. Additional work is needed.
-•	• **Missing Evidence** – the control is reported as “Implemented” or “Partial” but no evidence has been provided. Documentation must be gathered.
-•	• **Not Implemented** – the control is absent from your assessment or explicitly marked “Not Implemented”.
+	
+• **Compliant** – the control is reported as “Implemented” (or “Complete”) and valid evidence is provided.
+
+• **Partial** – the control is reported as “Partial” or has evidence but no clear implementation status. Additional work is needed.
+
+• **Missing Evidence** – the control is reported as “Implemented” or “Partial” but no evidence has been provided. Documentation must be gathered.
+
+• **Not Implemented** – the control is absent from your assessment or explicitly marked “Not Implemented”.
 
 
 Recommendations
@@ -40,9 +44,12 @@ For each control that is not fully compliant, the agent generates a concise reco
 
 Extending the Agent
 The assessment agent is open for enhancement. Organisations may wish to:
-•	• **Incorporate weighted maturity scoring** – adjust the logic to calculate maturity scores based on evidence quality or control criticality.
-•	• **Integrate with GRC systems** – export the results to your governance, risk and compliance platform for continuous monitoring.
-•	• **Customise recommendations** – tailor the recommendation templates to match your organisation’s policies, terminology and risk appetite.
+
+• **Incorporate weighted maturity scoring** – adjust the logic to calculate maturity scores based on evidence quality or control criticality.
+
+• **Integrate with GRC systems** – export the results to your governance, risk and compliance platform for continuous monitoring.
+
+• **Customise recommendations** – tailor the recommendation templates to match your organisation’s policies, terminology and risk appetite.
 
 
 Disclaimer
