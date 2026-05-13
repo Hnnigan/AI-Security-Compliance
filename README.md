@@ -10,16 +10,18 @@ It processes your organisation's self‑assessment, identifies which controls ar
 
 Files Required
 You will need:
-•	• **Mapping workbook** – the cross‑walk spreadsheet that maps AISMM controls to NIST AI RMF and ISO/IEC 42001. Ensure it contains a sheet named “Mapping” with columns such as Control ID, Control, NIST AI RMF Control Language / Playbook Actions, ISO/IEC 42001 Control Language / Checklist Criteria and Frameworks Complied To.
-•	• **Self‑assessment file** – your organisation’s controls and evidence. At a minimum this file should include the columns Control ID, Implementation Status and Evidence. You may include additional columns such as Owner, Business Unit, Target Maturity Score or Residual Risk.
+	
+• **Mapping workbook** – the cross‑walk spreadsheet that maps AISMM controls to NIST AI RMF and ISO/IEC 42001. Ensure it contains a sheet named “Mapping” with columns such as Control ID, Control, NIST AI RMF Control Language / Playbook Actions, ISO/IEC 42001 Control Language / Checklist Criteria and Frameworks Complied To.
+
+• **Self‑assessment file** – your organisation’s controls and evidence. At a minimum this file should include the columns Control ID, Implementation Status and Evidence. You may include additional columns such as Owner, Business Unit, Target Maturity Score or Residual Risk.
 
 
 Running the Agent
 The agent is implemented in the Python script `ai_security_maturity_agent.py`. To run the assessment:
-1.	1. Install the Python dependencies (pandas and openpyxl are required). These packages are available in most Python environments.
-2. Run the script from the command line, specifying the mapping file and your assessment file:
-2.	   python ai_security_maturity_agent.py --mapping-path <mapping.xlsx> --assessment-path <assessment.xlsx> --output-path <results.xlsx>
-3.	3. After execution, the script will create an Excel workbook with two sheets:
+1.	1.1. Install the Python dependencies (pandas and openpyxl are required). These packages are available in most Python environments.
+   1.2. Run the script from the command line, specifying the mapping file and your assessment file:
+2. python ai_security_maturity_agent.py --mapping-path <mapping.xlsx> --assessment-path <assessment.xlsx> --output-path <results.xlsx>
+3.	After execution, the script will create an Excel workbook with two sheets:
    • **Assessment_Results** – detailed per‑control analysis including the compliance status, gaps and recommended next steps.
    • **Summary** – aggregated counts and percentages of compliant, partial, missing evidence and not implemented controls per AISMM domain.
 
